@@ -34,7 +34,7 @@ public class Ques6 {
                     } else {
                         return 1;
                     }
-                } else if(freq1 > freq2) {
+                } else if(freq1 < freq2) {
                     return 1;
                 } else {
                     return -1;
@@ -43,7 +43,7 @@ public class Ques6 {
         });
 
         Iterator listIterator = list.iterator();
-        System.out.println("Elements in increasing order of frequency:");
+        System.out.println("Elements in decreasing order of frequency:");
         while(listIterator.hasNext()) {
             Map.Entry entry = (Map.Entry) listIterator.next();
             int key = (int) entry.getKey();
